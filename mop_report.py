@@ -5,6 +5,8 @@ from pyspark.sql.functions import sum as _sum, desc, asc, round
 spark = SparkSession.builder.appName("ITC Reports").getOrCreate()
 
 baseFilePath = "/workspaces/UPT_Data_Analysis/data/MOP_Data/"
+exportFilePath = "/workspaces/UPT_Data_Analysis/data/exports/"
+mop_exportFolderPath = "MOP_exports/"
 
 df_balances = spark.read.options(header="True", inferSchema="True", delimiter=",").csv(
     baseFilePath + "Balances.csv"
