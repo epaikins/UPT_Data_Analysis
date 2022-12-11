@@ -16,7 +16,8 @@
 	"postCreateCommand": "pip3 install --user -r requirements.txt",
 	"extensions":[
 		"ms-python.python",
-		"ms-python.black-formatter"
+		"ms-python.black-formatter",
+		"GrapeCity.gc-excelviewer"
 	]
 
 	// Configure tool-specific properties.
